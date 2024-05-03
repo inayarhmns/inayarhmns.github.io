@@ -1,0 +1,16 @@
+{
+    "projects": [
+      {
+        "name": "Mikostop",
+        "link": "mikostop.id",
+        "description": "Mikostop is a website to help diagnose Aspergillosis-infected disease. Developed in a group for IPMC.",
+        "type": "W&M", 
+        "role" : ["Frontend", "UI/UX Designer"],
+        "tech":["Next JS", "Figma"],
+        "developer" : "Group",
+        "picture" : "/path"
+      }
+      
+    ]
+  }
+  
