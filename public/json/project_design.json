@@ -1,0 +1,35 @@
+{
+    "projects": [
+      {
+        "name": "carbotanam",
+        "link": "#",
+        "description": "Carbotanam is a mobile app design to track and reduce digital carbon footprint with automation and rewards system in form of coins to be used for buying trees that will be planted on earth.",
+        "type": "D", 
+        "role" : ["UI/UX"],
+        "tech":["figma"],
+        "developer" : "team",
+        "picture" : "/img/carbotanam.svg"
+      },
+      {
+        "name": "Study Buddy",
+        "link": "https://www.figma.com/proto/zB2PYclljUoaCgv6T62qYi/Sister-TK-4?type=design&node-id=72-35592&scaling=scale-down&page-id=30%3A29374&starting-point-node-id=72%3A38112",
+        "description": "StudyBuddy is a mobile social media app design to help students find learning materials and study peers. ",
+        "type": "D", 
+        "role" : ["UI/UX"],
+        "tech":["figma"],
+        "developer" : "team",
+        "picture" : "/img/studybuddy.svg"
+      },
+      {
+        "name": "Perak",
+        "link": "https://www.instagram.com/perakfasilkom/",
+        "description": "Media designs for Perak Fasilkom 2023 publications.",
+        "type": "D", 
+        "role" : ["Visual Design"],
+        "tech":["figma"],
+        "developer" : "team",
+        "picture" : "/img/perak.svg"
+      }
+    ]
+  }
+  

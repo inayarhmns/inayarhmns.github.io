@@ -52,10 +52,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <div className={`${kyiv.className} bg-fixed bg-primary-bg`}>
+      <body className={`${kyiv.className} bg-fixed bg-primary-bg`}>
         <Navbar></Navbar>
         {children}
-      </div>
+        </body>
     </html>
   );
 }

@@ -10,8 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "primary-black": "#240010",
+        "primary-black": "#282424",
         "primary-cream": "#FFF1E0",
+        "primary-green": "#859D8A"
+      },
+      width: {
+        '1/8': '12.5%',
       },
       backgroundImage: theme => ({
         "primary-bg": "radial-gradient(176.42% 113.35% at 20.76% 45.41%, #617C65 1.66%, #6F7C66 25.7%, #8AA593 61.96%)",
