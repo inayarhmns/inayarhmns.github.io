@@ -31,7 +31,7 @@ export default function Navbar() {
               
               <div className="grid grid-cols-4  justify-center text-center items-center">
                 {/* <div className='w-1/4'> */}
-                    <hr className="col-span-1 items-center justify-center border-t-1 border-primary-black" />
+                    <hr className="col-span-1 items-center justify-center border-t-1 border-primary-cream" />
                 {/* </div> */}
                 <div className='col-span-2 space-x-20'>
                   {links.map((link) => (
@@ -39,8 +39,8 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     className={`uppercase ${
-                      pathname === link.href ? 'text-primary-black font-black' : 'font-regular text-primary-black'
-                    } hover:text-primary-black rounded-md px-3 py-2 text-sm font-regular`}
+                      pathname === link.href ? 'text-primary-cream font-black' : 'font-regular text-primary-cream'
+                    } hover:text-primary-cream rounded-md px-3 py-2 text-sm font-regular`}
                   >
                     {link.label}
                   </a>
@@ -62,8 +62,8 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`uppercase ${
-                pathname === link.href ? 'text-primary-black ' : 'text-gray-300'
-              } block rounded-md px-3 py-2 text-base font-medium hover:text-primary-black`}
+                pathname === link.href ? 'text-primary-cream ' : 'text-gray-300'
+              } block rounded-md px-3 py-2 text-base font-medium hover:text-primary-cream`}
               aria-current={pathname === link.href ? 'page' : undefined}
             >
               {link.label}

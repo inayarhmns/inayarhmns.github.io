@@ -22,13 +22,13 @@ const logos = [
 ];
 export default function Home() {
   return (
-    <main className="text-primary-black flex min-h-screen flex-col justify-center px-10 md:px-20 py-20" >
+    <main className="text-primary-cream flex min-h-screen flex-col justify-center px-10 md:px-20 py-20" >
 <div className=" font-light  text-md sm:text-xl w-full items-left grid grid-cols-1 sm:grid-cols-2 space-y-2">
   <div>
     <p className="text-xl">
     Hello! I'm
   </p>
-  <p className="font-black uppercase text-2xl sm:text-4xl md:text-6xl bg-gradient-to-r from-yellow-500 via-emerald-200 to-green-500 text-transparent bg-clip-text animate-gradient">
+  <p className="font-black uppercase text-2xl sm:text-4xl md:text-6xl bg-gradient-to-r from-yellow-500 via-emerald-200 to-green-800 text-transparent bg-clip-text animate-gradient">
     inaya rahmanisa
   </p>
   </div>

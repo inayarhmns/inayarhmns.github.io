@@ -4,10 +4,10 @@ import LogoIcon from "@/components/LogoIcon";
 
 export default function Home() {
   return (
-    <main className=" text-primary-black w-lg  flex min-h-screen flex-col justify-center px-10 md:px-20  pb-10" >
+    <main className=" text-primary-cream w-lg  flex min-h-screen flex-col justify-center px-10 md:px-20  pb-10" >
         <div className="flex  flex-row w-full text-3xl sm:text-6xl gap-4">
         <div
-        className="gap-10 mx-auto w-full mt-20 border-4 border-primary-black shadow-[10px_10px_0_0_primary-black] shadow-primary-black  mx-5 p-4 md:p-10 flex flex-col items-center justify-center text-center">
+        className="gap-10 mx-auto w-full mt-20 border-4 border-primary-cream shadow-[10px_10px_0_0_primary-cream] shadow-primary-cream  mx-5 p-4 md:p-10 flex flex-col items-center justify-center text-center">
        
        <div className="flex flex-row text-3xl sm:text-6xl gap-4">
             <div className="flex flex-shrink-0 items-center">
