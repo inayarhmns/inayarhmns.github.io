@@ -34,7 +34,7 @@ export default function Home() {
   </div>
   <div className="space-y-10">
     <p className="text-md">
-      A <span className="font-bold">software developer & designer</span> as well as a 3rd year Computer Science student at University of Indonesia. I make websites, games, occasionally mobile apps, and design them too. I also happen to know how to use a brush (both traditionally and digitally).
+      A <span className="font-bold">software developer & designer</span> as well as a 3rd year Computer Science student at University of Indonesia. I make websites, games, occasionally mobile apps, and design them too
     </p>
     <div className="min-w-full">
       <p className="text-md font-light">Languages & frameworks I have worked with: </p> 
