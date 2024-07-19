@@ -50,6 +50,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
   return (
     <html lang="en" className="bg-fixed bg-primary-bg overflow-hidden">
        <head>
@@ -67,11 +69,14 @@ export default function RootLayout({
     <path fill="#393637" opacity={0.5} className="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
 </svg>
 
-        <Navbar></Navbar>
+        
         <div className="relative z-10 h-screen overflow-auto">
         {children}
-
+          <div className='pb-2 text-sm text-center text-primary-black font-thin items-end'>
+            Designed in Figma. Made with Next JS. Handcrafted by me. ♥️ © 2024 inayarhmns.
+          </div>
         </div>
+        
         </body>
     </html>
   );

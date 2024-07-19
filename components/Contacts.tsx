@@ -1,17 +1,14 @@
-
-import Navbar from "@/components/navbar";
 import Image from "next/image";
-import LogoIcon from "@/components/LogoIcon";
+import React from 'react';
 
-export default function Contact() {
+const Contacts: React.FC = ()=> {
   return (
-    <main className=" text-primary-cream w-lg  flex min-h-screen flex-col justify-center px-10 md:px-20  pb-10" >
-        <div className="flex  flex-row w-full text-3xl sm:text-6xl gap-4">
+    <div className="slide-up flex  flex-row text-3xl sm:text-6xl gap-4">
         <div
-        className="gap-10 mx-auto w-full mt-20 border-4 border-primary-cream shadow-[10px_10px_0_0_primary-cream] shadow-primary-cream  mx-5 p-4 md:p-10 flex flex-col items-center justify-center text-center">
+        className="gap-10  mt-20 border-4 border-primary-cream shadow-[10px_10px_0_0_primary-cream] shadow-primary-cream  p-4 md:p-10 flex flex-col items-center justify-center text-center">
        
        <div className="flex flex-row text-3xl sm:text-6xl gap-4">
-            <div className="flex flex-shrink-0 items-center">
+            {/* <div className="flex flex-shrink-0 items-center">
               <Image
                 className="h-10 sm:h-14 w-auto"
                 src="/img/nayx.svg"
@@ -19,8 +16,8 @@ export default function Contact() {
                 width={32}
                 height={32}
               />
-            </div>
-            <p className="bg-gradient-to-r from-yellow-500 via-emerald-500 to-green-400 text-transparent bg-clip-text animate-gradient">
+            </div> */}
+            <p className="bg-gradient-to-r from-primary-cream via-light-cream to-primary-black text-transparent bg-clip-text animate-gradient">
                 Let's connect!
             </p>
         </div>        
@@ -55,7 +52,6 @@ export default function Contact() {
             
         </div>
 
-
-    </main>
   );
 }
+export default Contacts;
