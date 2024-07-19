@@ -44,7 +44,7 @@ interface LogoIconProps {
 
 const LogoIcon: React.FC<LogoIconProps> = ({ logo }) => {
   return (
-    <span className="inline-block p-1 bg-primary-cream bg-opacity-80 pb-0 rounded-lg transform hover:scale-150">
+    <span className="inline-block p-1 bg-primary-cream bg-opacity-20 pb-0 rounded-full transform hover:scale-150">
         <i className={logoClasses[logo]}></i>
     </span>
   );

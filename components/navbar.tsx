@@ -1,8 +1,15 @@
 "use client"
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const pathname = usePathname();
 
   const links = [
@@ -18,7 +25,7 @@ export default function Navbar() {
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden"></div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center">
+            <div className="md:flex flex-shrink-0 items-center hidden ">
               <Image
                 className="h-8 w-auto"
                 src="/img/nayx.svg"
@@ -53,24 +60,37 @@ export default function Navbar() {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"></div>
         </div>
       </div>
+      <button type="button" className="sm:hidden relative inline-flex items-center justify-center rounded-md p-2 text-primary-cream focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded={isMenuOpen}
+        onClick={toggleMenu}>
+          <span className="absolute -inset-0.5"></span>
 
+          <svg className="block h-8 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+
+          <svg className="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        
       {/* Mobile menu, show/hide based on menu state. */}
-      <div className="sm:hidden" id="mobile-menu">
-        <div className="w-full items-center space-y-1 px-2 pb-3 pt-2">
+      <div className={`text-sm sm:hidden ${isMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
+        <div className="w-full items-center space-y-1 px-2 pt-2">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
               className={`uppercase ${
-                pathname === link.href ? 'text-primary-cream ' : 'text-gray-300'
-              } block rounded-md px-3 py-2 text-base font-medium hover:text-primary-cream`}
+                pathname === link.href ? 'text-primary-cream' : 'text-gray-300'
+              } block rounded-md px-3 py-2 text-sm font-medium hover:text-primary-cream`}
               aria-current={pathname === link.href ? 'page' : undefined}
             >
               {link.label}
+              <hr className='opacity-50 '/>
             </a>
+            
           ))}
         </div>
-        <hr></hr>
       </div>
     </nav>
   );

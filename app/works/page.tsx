@@ -7,7 +7,8 @@ import FlipCard from "@/components/FlipCard";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col w-screen justify-center items-center sm:items-center px-5 pt-5 pb-20" >
-      <div className="flex flex-row items-center w-full">
+      <div className="overflow-visible">
+        <div className="flex flex-row items-center w-full">
         <h1 className="text-primary-cream text-3xl sm:text-6xl w-min font-thin py-10 gap-x-10">WEB & MOBDEV</h1>
         {/* <hr className="flex-grow border-t-1 border-primary-cream mx-4" /> */}
 
@@ -33,6 +34,8 @@ export default function Home() {
         <FlipCard key={index} project={project} />
       ))}
         </div>
+      </div>
+      
         
     </main>
   );

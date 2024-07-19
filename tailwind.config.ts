@@ -12,7 +12,9 @@ const config: Config = {
       colors: {
         "primary-black": "#282424",
         "primary-cream": "#FFF1E0",
-        "primary-green": "#859D8A"
+        "light-cream" : "#FFE0E0",
+        "primary-green": "#859D8A",
+        "light-green" : "#C7D1C7"
       },
       width: {
         '1/8': '12.5%',
