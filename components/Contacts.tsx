@@ -3,7 +3,7 @@ import React from 'react';
 
 const Contacts: React.FC = ()=> {
   return (
-    <div className="slide-up flex  flex-row text-3xl sm:text-6xl gap-4">
+    <div className="slide-up flex w-full flex-row text-3xl sm:text-6xl gap-4 justify-center items-center">
         <div
         className="gap-10  mt-20 border-4 border-primary-cream shadow-[10px_10px_0_0_primary-cream] shadow-primary-cream  p-4 md:p-10 flex flex-col items-center justify-center text-center">
        
