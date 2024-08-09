@@ -31,6 +31,26 @@
         "picture" : "/img/motive.svg"
       },
       {
+        "name": "Parentie",
+        "link": "https://devpost.com/software/parentie",
+        "description": "Parentie is a parenting support application to connect and aid inexperienced parents by providing the right needs. We provide personalized profiles and django websoket-powered chat feature to encourage parents to reach out, communicate, and form agreements to become milk mothers, ensuring that every baby gets the nourishment they need. Furthermore, Parentie includes a Forum feature to support both mothers and fathers. In the discussion section, parents can ask and answer questions, gaining insights from other parents, and share information around parenting related events.",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "UI/UX"],
+        "tech":["django", "figma"],
+        "developer" : "team",
+        "picture" : "/img/parentie/gallerydashboard.jpg"
+      },
+      {
+        "name": "Ecotecture",
+        "link": "https://ecotecture.vercel.app/",
+        "description":"Ecotecture is a web application prototype for an eco friendly architecture service. Ecotecture provides a solar panel simulator and renewable energy recommendation based on area in Indonesia. This application offers help for people who are looking for green architect services in their area.",
+        "type": "W&M", 
+        "role" : ["BE", "FE"],
+        "tech":["nextjs-icon", "laravel"],
+        "developer" : "team",
+        "picture" : "/img/ecotecture.png"
+      },
+      {
         "name": "UIVerse",
         "link": "https://uiverse-fe.vercel.app/",
         "description": "UIVerse is a social media website for University of Indonesia (UI) students to discuss about topics revolving around UI.",
@@ -70,6 +90,7 @@
         "developer" : "team",
         "picture" : "/img/iramakain.svg"
       }
+      
       
     ]
   }

@@ -9,7 +9,7 @@ const Home: React.FC = ()=> {
 const logos = [
     'python', 'java', 'javascript', 'google-cloud', 'postgresql', 'firebase', 
     'django', 'spring', 'nextjs-icon', 'react', 'express', 'flutter', 'sap', 
-    'godot', 'unity', 'figma', 'vue'
+    'godot', 'unity', 'figma', 'vue', 'laravel'
   ];
 
   return (

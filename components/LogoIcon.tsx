@@ -15,7 +15,8 @@ const logos = [
     'godot',
     'unity',
     'figma',
-    'google-cloud'
+    'google-cloud', 
+    'laravel'
   ];
   
   const logoClasses: { [key: string]: string } = {
@@ -35,6 +36,7 @@ const logos = [
     godot: 'icon-[logos--godot]',
     unity: 'icon-[logos--unity]',
     figma: 'icon-[logos--figma]',
+    laravel: 'icon-[logos--laravel]',
     'google-cloud': 'icon-[logos--google-cloud]'
     
   };
