@@ -47,6 +47,11 @@ const Contacts: React.FC = ()=> {
                 <i className="icon-[mdi--gmail]"></i>
                 </a>
             </li>
+            <li className="mx-2">
+                <a href="https://www.artstation.com/nayechz" target="_blank" aria-label="ARTSTATION">
+                <i className="icon-[mdi--art]"></i>
+                </a>
+            </li>
         </ul>
     </div>
             
