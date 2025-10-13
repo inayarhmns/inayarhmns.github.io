@@ -1,0 +1,36 @@
+{
+    "projects": [
+      {
+        "name": "Anra",
+        "link": "https://nayechz.itch.io/anra",
+        "description": "Anra is a strategy-adventure side-scrolling 2d platformer game about the journey of a robot in an exoplanet to find a new home for humanity.",
+        "type": "GD", 
+        "role" : ["Dev", "Designer"],
+        "tech":["godot", "figma"],
+        "developer" : "solo",
+        "picture" : "/img/anra.svg"
+      },
+      {
+        "name": "AAT4BAD",
+        "link": "https://nayechz.itch.io/duckk",
+        "description": "Always A Time For Being A Duck is an adventure side-scrolling 2d platformer game about the journey of a father duck in a park full of children to go back to his family.",
+        "type": "GD", 
+        "role" : ["Dev", "Designer"],
+        "tech":["godot", "figma"],
+        "developer" : "team",
+        "picture" : "/img/aat4bad.svg"
+      },
+      {
+        "name": "SLTL",
+        "link": "https://navisraditya.itch.io/something-left-to-lose",
+        "description": "Something Left To Lose is a psychological adventure game about a bullied boy who is trying to escape from the voices in his head.",
+        "type": "GD", 
+        "role" : ["Dev", "Designer"],
+        "tech":["godot"],
+        "developer" : "team",
+        "picture" : "/img/sltl.png"
+      }
+      
+    ]
+  }
+  

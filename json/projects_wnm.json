@@ -1,0 +1,107 @@
+{
+    "projects": [
+      {
+        "name": "CovIndex",
+        "link": "http://35.199.20.192",
+        "description": "Covindex is a Covid-19 information search engine derived from journal paper datasets about Covid-19. Made with PyTerrier in Python. For demo and explanation: https://www.youtube.com/watch?v=VNSSa64F6pI",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "UI/UX"],
+        "tech":[ "python", "django"],
+        "developer" : "team",
+        "picture" : "/img/covindex.png"
+      },
+      {
+        "name": "WMS",
+        "link": "https://ppl-a5-frontend.vercel.app/login",
+        "description": "WMS is a warehouse management information system for PT Krida Technologies. Developed in a team for softeng project at Fasilkom UI.",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "UI/UX"],
+        "tech":["django", "vue", "google-cloud", "figma", "postgresql"],
+        "developer" : "team",
+        "picture" : "/img/wms.svg"
+      },
+      {
+        "name": "Mikostop",
+        "link": "https://www.mikostop.com/",
+        "description": "Mikostop is a website to help diagnose Aspergillosis infected disease. Developed in a team in collaboration with IPMC.",
+        "type": "W&M", 
+        "role" : ["FE", "UI/UX"],
+        "tech":["nextjs-icon", "figma"],
+        "developer" : "team",
+        "picture" : "/img/mikostop.svg"
+      },
+      {
+        "name": "Motive Academy",
+        "link": "https://motiveacademy.id/",
+        "description": "Motive Academy is a learning course website for Muslim youth as one of the features of Motive startup.",
+        "type": "W&M", 
+        "role" : ["BE", "FE"],
+        "tech":["nextjs-icon", "figma", "express", "firebase"],
+        "developer" : "team",
+        "picture" : "/img/motive.svg"
+      },
+      {
+        "name": "Parentie",
+        "link": "https://devpost.com/software/parentie",
+        "description": "Parentie is a parenting support application to connect and aid inexperienced parents by providing the right needs. We provide personalized profiles and django websoket-powered chat feature to encourage parents to reach out, communicate, and form agreements to become milk mothers, ensuring that every baby gets the nourishment they need. Furthermore, Parentie includes a Forum feature to support both mothers and fathers. In the discussion section, parents can ask and answer questions, gaining insights from other parents, and share information around parenting related events.",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "UI/UX"],
+        "tech":["django", "figma"],
+        "developer" : "team",
+        "picture" : "/img/parentie/gallerydashboard.jpg"
+      },
+      {
+        "name": "Ecotecture",
+        "link": "https://ecotecture.vercel.app/",
+        "description":"Ecotecture is a web application prototype for an eco friendly architecture service. Ecotecture provides a solar panel simulator and renewable energy recommendation based on area in Indonesia. This application offers help for people who are looking for green architect services in their area.",
+        "type": "W&M", 
+        "role" : ["BE", "FE"],
+        "tech":["nextjs-icon", "laravel"],
+        "developer" : "team",
+        "picture" : "/img/ecotecture.png"
+      },
+      {
+        "name": "UIVerse",
+        "link": "https://uiverse-fe.vercel.app/",
+        "description": "UIVerse is a social media website for University of Indonesia (UI) students to discuss about topics revolving around UI.",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "UI/UX"],
+        "tech":["django", "nextjs-icon", "figma", "postgresql"],
+        "developer" : "team",
+        "picture" : "/img/uiverse.svg"
+      },
+      {
+        "name": "Lakutenan",
+        "link": "https://build-sb1.design-time.eu10.apps.build.cloud.sap/builder/applications/29697",
+        "description": "Lakutenan is a web app to help connect SMEs and event organizers complete their needs and benefits.",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "UI/UX"],
+        "tech":["express", "sap", "firebase", "figma"],
+        "developer" : "team",
+        "picture" : "/img/lakutenan.svg"
+      },
+      {
+        "name": "Budiman",
+        "link": "https://budiman-c8.vercel.app/",
+        "description": "Budiman is a budget management web app where users can log expenses and income to be tracked and analysed effectively. Developed for advanced programming course at Fasilkom UI.",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "UI/UX"],
+        "tech":["spring", "nextjs-icon", "google-cloud", "figma"],
+        "developer" : "team",
+        "picture" : "/img/budiman.svg"
+      },
+      {
+        "name": "Irama Kain",
+        "link": "https://irama-kain.up.railway.app/",
+        "description": "Irama Kain is a web and mobile application for clothing donation. Users donate their unused clothes to be reworked in a gallery, then receive coins to be used for the reworked clothing market.",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "UI/UX"],
+        "tech":["django", "flutter", "figma"],
+        "developer" : "team",
+        "picture" : "/img/iramakain.svg"
+      }
+      
+      
+    ]
+  }
+  
