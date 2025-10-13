@@ -8,7 +8,7 @@
         "role" : ["BE", "FE", "UI/UX"],
         "tech":[ "python", "django"],
         "developer" : "team",
-        "picture" : "/img/covindex.png"
+        "picture" : "/img/covindex.svg"
       },
       {
         "name": "WMS",
@@ -48,7 +48,7 @@
         "role" : ["BE", "FE", "UI/UX"],
         "tech":["django", "figma"],
         "developer" : "team",
-        "picture" : "/img/parentie/gallerydashboard.jpg"
+        "picture" : "/img/parentie/gallerydashboard.svg"
       },
       {
         "name": "Ecotecture",
@@ -58,7 +58,7 @@
         "role" : ["BE", "FE"],
         "tech":["nextjs-icon", "laravel"],
         "developer" : "team",
-        "picture" : "/img/ecotecture.png"
+        "picture" : "/img/ecotecture.svg"
       },
       {
         "name": "UIVerse",
