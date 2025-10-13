@@ -26,6 +26,7 @@ jobs:
 
       - name: Build Next.js static export
         run: |
+          rm -rf .next out
           npm run build
           touch out/.nojekyll
 
