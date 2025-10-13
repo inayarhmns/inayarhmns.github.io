@@ -8,7 +8,7 @@
         "role" : ["First author"],
         "tech":["python","pytorch"],
         "developer" : "team",
-        "picture" : "/img/map1col.jpg"
+        "picture" : "/img/map1col.svg"
       }
     ]
   }
