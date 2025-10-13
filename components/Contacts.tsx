@@ -5,7 +5,7 @@ const Contacts: React.FC = ()=> {
   return (
     <div className="slide-up flex w-full flex-row text-3xl sm:text-6xl gap-4 justify-center items-center">
         <div
-        className="gap-10  mt-20 border-4 border-primary-cream shadow-[10px_10px_0_0_primary-cream] shadow-primary-cream  p-4 md:p-10 flex flex-col items-center justify-center text-center">
+        className="gap-10  mt-20 border-4 border-primary-black shadow-[10px_10px_0_0_primary-black] shadow-primary-black  p-4 md:p-10 flex flex-col items-center justify-center text-center">
        
        <div className="flex flex-row text-3xl sm:text-6xl gap-4">
             {/* <div className="flex flex-shrink-0 items-center">
@@ -17,24 +17,33 @@ const Contacts: React.FC = ()=> {
                 height={32}
               />
             </div> */}
-            <p className="bg-gradient-to-r from-primary-cream via-light-cream to-primary-black text-transparent bg-clip-text animate-gradient">
+            <p className="bg-gradient-to-r from-primary-black via-primary-green to-primary-black text-transparent bg-clip-text animate-gradient">
                 Let's connect!
             </p>
         </div>        
-        <ul className="flex flex-row items-center justify-center text-center mt-5">
+        <ul className="flex flex-row flex-wrap items-center justify-center text-center mt-5 text-4xl gap-y-4">
             <li className="mx-2">
                 <a href="https://github.com/inayarhmns" target="_blank" aria-label="Github">
                 <i className="icon-[mdi--github]"></i>
                 </a>
             </li>
             <li className="mx-2">
-                <a href="https://instagram.com/inayarhmns" target="_blank" aria-label="Instagram">
-                <i className="icon-[mdi--instagram]"></i>
+                <a href="https://substack.com/@inayarhmns" target="_blank" aria-label="Substack">
+                <img
+                    src="/img/substack.png"
+                    alt="Substack"// adjust size to match your icons
+                    className="inline-block h-[1em] min-w-[0.8em] w-auto"
+                />
                 </a>
             </li>
             <li className="mx-2">
                 <a href="https://www.linkedin.com/in/inayarahmanisa/" target="_blank" aria-label="LinkedIn">
                 <i className="icon-[mdi--linkedin]"></i>
+                </a>
+            </li>
+            <li className="mx-2">
+                <a href="https://instagram.com/inayarhmns" target="_blank" aria-label="Instagram">
+                <i className="icon-[mdi--instagram]"></i>
                 </a>
             </li>
             <li className="mx-2">
@@ -47,9 +56,13 @@ const Contacts: React.FC = ()=> {
                 <i className="icon-[mdi--gmail]"></i>
                 </a>
             </li>
-            <li className="mx-2">
+            <li className="mx-2 ">
                 <a href="https://www.artstation.com/nayechz" target="_blank" aria-label="artstation">
-                <i className="icon-[mdi--art]"></i>
+                <img
+                    src="/img/artstation.png"
+                    alt="Artstation"// adjust size to match your icons
+                    className="inline-block h-[1em] min-w-[0.5em] w-auto"
+                />
                 </a>
             </li>
         </ul>

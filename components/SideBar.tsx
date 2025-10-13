@@ -17,18 +17,19 @@ const SideBar: React.FC = ()=> {
                 |
             </li>
             <li className="">
-                <a href="https://instagram.com/inayarhmns" target="_blank" aria-label="Instagram">
-                <i className="icon-[mdi--instagram]"></i>
+                <a href="https://www.linkedin.com/in/inayarahmanisa/" target="_blank" aria-label="LinkedIn">
+                <i className="icon-[mdi--linkedin]"></i>
                 </a>
             </li>
             <li>
                 |
             </li>
             <li className="">
-                <a href="https://www.linkedin.com/in/inayarahmanisa/" target="_blank" aria-label="LinkedIn">
-                <i className="icon-[mdi--linkedin]"></i>
+                <a href="https://instagram.com/inayarhmns" target="_blank" aria-label="Instagram">
+                <i className="icon-[mdi--instagram]"></i>
                 </a>
             </li>
+            
     </ul>
     {/* <div className="flex justify-center">
         <div className="bg-opacity-70 w-[0.5px] h-[400px] bg-primary-cream"></div>

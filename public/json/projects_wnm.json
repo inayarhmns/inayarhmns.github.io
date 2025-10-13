@@ -1,6 +1,16 @@
 {
     "projects": [
       {
+        "name": "CovIndex",
+        "link": "http://35.199.20.192",
+        "description": "Covindex is a Covid-19 information search engine derived from journal paper datasets about Covid-19. Made with PyTerrier in Python. For demo and explanation: https://www.youtube.com/watch?v=VNSSa64F6pI",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "UI/UX"],
+        "tech":[ "python", "django"],
+        "developer" : "team",
+        "picture" : "/img/covindex.png"
+      },
+      {
         "name": "WMS",
         "link": "https://ppl-a5-frontend.vercel.app/login",
         "description": "WMS is a warehouse management information system for PT Krida Technologies. Developed in a team for softeng project at Fasilkom UI.",

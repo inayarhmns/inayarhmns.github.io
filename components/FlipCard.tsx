@@ -18,15 +18,25 @@ const FlipCard: React.FC<FlipCardProps> = ({ project }) => {
   return (
   
     <div>
-        <div className="z-10 flip-card text-primary-cream">
+        <div className="z-10 flip-card text-primary-black">
           <div className="flip-card-inner">
               <div className="flip-card-front bg-cover relative">
               <Image src={project.picture} alt={project.name} fill priority style={{objectFit:"cover"}} className="rounded-lg" />
-
-                <div className="absolute inset-0 rounded-lg" style={{background: "linear-gradient(180deg, rgba(105, 124, 102, 0) -3.2%, rgba(137, 152, 137, 0.2) 72.99%, rgba(145, 159, 145, 0.904283) 81.24%, rgba(124, 142, 125, 0.950023) 90.86%, #657C66 100%)"}}>
+                <div className="absolute top-2 left-2 bg-primary-black/70 text-white text-xs font-medium px-2 py-1 rounded-md">
+                  {project.type === "GD"
+                    ? "Gamedev"
+                    : project.type === "W&M"
+                    ? "Web/Mobile"
+                    : project.type === "P"
+                    ? "Publications"
+                    : project.type === "D"
+                    ? "Designs"
+                    : ""}
+                </div>
+                <div className="absolute inset-0 rounded-lg" style={{background: "linear-gradient(180deg, rgba(119, 121, 118, 0) -3.2%, rgba(150, 153, 150, 0.2) 72.99%, rgba(183, 187, 183, 0.9) 81.24%, rgba(170, 179, 170, 0.95) 90.86%, #6e786fff 100%)"}}>
                 </div> 
-                <div className="mb-4 flex flex-col justify-end absolute inset-0">
-                  <p className="uppercase text-lg font-light" style={{letterSpacing: "0.49em"}}>{project.name}</p>
+                <div className="mb-4 flex flex-col justify-end absolute inset-0 ">
+                  <p className="uppercase text-lg font-light truncate" style={{letterSpacing: "0.49em"}}>{project.name}</p>
                 </div>
               
                   

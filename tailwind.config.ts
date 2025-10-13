@@ -20,7 +20,7 @@ const config: Config = {
         '1/8': '12.5%',
       },
       backgroundImage: theme => ({
-        "primary-bg": "radial-gradient(176.42% 113.35% at 20.76% 45.41%, #617C65 1.66%, #6F7C66 25.7%, #8AA593 61.96%)",
+        "primary-bg": "radial-gradient(176.42% 113.35% at 20.76% 45.41%, #9CA99E 1.66%, #828F78 15.7%, #CAD5C2 61.96%)",
       }),
     },
   },

@@ -16,11 +16,13 @@ const logos = [
     'unity',
     'figma',
     'google-cloud', 
-    'laravel'
+    'laravel',
+    'pytorch'
   ];
   
   const logoClasses: { [key: string]: string } = {
     python: 'icon-[logos--python]',
+    pytorch: 'icon-[logos--pytorch]',
     java: 'icon-[logos--java]',
     javascript: 'icon-[logos--javascript]',
     postgresql: 'icon-[logos--postgresql]',

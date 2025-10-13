@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <main className="text-primary-cream flex min-h-fit sm:min-h-screen flex-col justify-center px-8 md:px-20 mb-48 sm:mb-0 py-10 sm:py-20">
+    <main className="text-primary-black flex min-h-fit sm:min-h-screen flex-col justify-center px-8 md:px-20 mb-48 sm:mb-0 py-10 sm:py-20">
       <Navbar  onLinkClick={handlePageChange}></Navbar>
       <div className='hidden md:flex'>
         <SideBar/>
