@@ -31,7 +31,7 @@ const Contacts: React.FC = ()=> {
                 <a href="https://substack.com/@inayarhmns" target="_blank" aria-label="Substack">
                 <img
                     src="/img/substack.png"
-                    alt="Substack"// adjust size to match your icons
+                    alt="Substack"
                     className="inline-block h-[1em] min-w-[0.8em] w-auto"
                 />
                 </a>
@@ -60,7 +60,7 @@ const Contacts: React.FC = ()=> {
                 <a href="https://www.artstation.com/nayechz" target="_blank" aria-label="artstation">
                 <img
                     src="/img/artstation.png"
-                    alt="Artstation"// adjust size to match your icons
+                    alt="Artstation"
                     className="inline-block h-[1em] min-w-[0.5em] w-auto"
                 />
                 </a>
