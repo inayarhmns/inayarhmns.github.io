@@ -1,0 +1,15 @@
+{
+    "projects": [
+      {
+        "name": "Unveiling the Influence of Amplifying Language-Specific Neurons",
+        "link": "https://arxiv.org/pdf/2507.22581",
+        "description": "This research titled 'Unveiling the Influence of Amplifying Language-Specific Neurons' studies the amplification of language-specific neurons in large language models (LLMs). It involves identifying and intervening language-specific neurons in several autoregressive models, with the purpose of model interpretability.",
+        "type": "P", 
+        "role" : ["First author"],
+        "tech":["python","pytorch"],
+        "developer" : "team",
+        "picture" : "/img/map1col.jpg"
+      }
+    ]
+  }
+  
