@@ -21,7 +21,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ project }) => {
         <div className="z-10 flip-card text-primary-black">
           <div className="flip-card-inner">
               <div className="flip-card-front bg-cover relative">
-              <Image src={project.picture} alt={project.name} fill priority style={{objectFit:"cover"}} className="rounded-lg" />
+              <Image src={project.picture} alt={project.name} fill priority unoptimized style={{objectFit:"cover"}} className="rounded-lg" />
                 <div className="absolute top-2 left-2 bg-primary-black/70 text-white text-xs font-medium px-2 py-1 rounded-md">
                   {project.type === "GD"
                     ? "Gamedev"
