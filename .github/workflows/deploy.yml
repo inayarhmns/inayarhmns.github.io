@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Next.js static export
+      - name: Build static site
         run: |
           rm -rf .next out
           npm run build
@@ -34,8 +34,10 @@ jobs:
         run: |
           echo "🧹 Cleaning old files..."
           find . -maxdepth 1 ! -name '.git' ! -name 'out' ! -name '.' -exec rm -rf {} +
-          echo "📁 Moving build output..."
-          cp -r out/* .
+
+          echo "📁 Moving build output (including hidden folders)..."
+          cp -r out/. .    # ✅ copy EVERYTHING including _next
+
           echo "🚀 Committing and pushing..."
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
