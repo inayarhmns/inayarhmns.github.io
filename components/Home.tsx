@@ -15,7 +15,7 @@ const logos = [
   return (
     
     
-    <div className="slide-up text-start font-thin sm:text-xl w-full items-left grid grid-cols-1 sm:grid-cols-2 gap-10">
+    <div className="slide-up text-start font-light sm:text-xl w-full items-left grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div className="flex items-center justify-center justify-center">
           {/* <p className="text-xl">Hello! I'm</p> */}
           <div className="block">
@@ -43,7 +43,7 @@ const logos = [
             <span className="font-bold">AI researcher</span> exploring methods to make large language models more understandable and applicable to real-world problems. Currently focused on neural computation, with previous work in natural language processing (NLP) on neuron-level interpretability, developing techniques to enhance the transparency and reliability of large language models.
             <br />
             <br />
-            Alongside research, I have a strong background in <span className="font-light">software development, game development, and DevOps.</span> I love building websites, games, tools, experiments, and finding creative ways to bring ideas to life through code.        </p>
+            Alongside research, I have a strong background in <span className="font-bold">software development, game development, and DevOps.</span> I love building websites, games, tools, experiments, and finding creative ways to bring ideas to life through code.        </p>
           <div className="min-w-full">
             <p className="text-sm font-light">Languages & frameworks I have worked with: </p>
             <div className="items-center justify-between text-between space-x-1 sm:space-x-3 space-y-1">
