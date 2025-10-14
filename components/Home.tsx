@@ -15,7 +15,7 @@ const logos = [
   return (
     
     
-    <div className="slide-up text-start font-light sm:text-xl w-full items-left grid grid-cols-1 sm:grid-cols-2 gap-10">
+    <div className="slide-up text-start font-extralight sm:text-xl w-full items-left grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div className="flex items-center justify-center justify-center">
           {/* <p className="text-xl">Hello! I'm</p> */}
           <div className="block">
