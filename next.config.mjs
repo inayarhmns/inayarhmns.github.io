@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
+    assetPrefix: '/',   
     images: {
-    unoptimized: true, // allow Next Image in static mode
-    assetPrefix: './', 
+    unoptimized: true, 
   },
 };
 

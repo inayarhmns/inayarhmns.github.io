@@ -1,6 +1,16 @@
 {
     "projects": [
       {
+        "name": "Sikonde",
+        "link": "https://sikonde.depok.go.id/",
+        "description": "Sikonde is a web application designed for psychological consultation for the residents of Depok. It has been officially granted to the Depok Government and has obtained Intellectual Property Rights. The app is currently operational and actively used in collaboration with psychologists from PUSPAGA Depok. Key features include online consultation, a mood tracker, and a gratitude journal.",
+        "type": "W&M", 
+        "role" : ["BE", "FE", "DevOps"],
+        "tech":[ "spring", "nextjs-icon"],
+        "developer" : "team",
+        "picture" : "/img/sikonde.svg"
+      },
+      {
         "name": "CovIndex",
         "link": "http://35.199.20.192",
         "description": "Covindex is a Covid-19 information search engine derived from journal paper datasets about Covid-19. Made with PyTerrier in Python. For demo and explanation: https://www.youtube.com/watch?v=VNSSa64F6pI",
