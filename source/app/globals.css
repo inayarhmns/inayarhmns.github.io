@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .my-rotate-y-180 {
+    transform: rotateY(180deg),
+  }
+  .preserve-3d {
+    transform-style: preserve-3d,
+  }
+  .perspective {
+    perspective: 1000px,
+  }
+  .backface-hidden{
+    backface-visibility: hidden,
+  }
+  
+}
+
+/* @layer base {
+  @font-face {
+      font-family: "kyiv";
+      src: url("../public/font/kyiv-type-sans/KyivTypeSans-Black-.otf") format("opentype");
+  }
+} */
+
+/* .flip-card {
+  background-color: transparent;
+  width: 20px;
+  height:200px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0  rgba(36, 0, 16, 0.20);;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  color: #240010;
+}
+
+.flip-card-back {
+  background: #C7D1C8;
+  color: #240010;
+  transform: rotateY(180deg);
+} */
+
+/* .my-rotate-y-180 {
+  transform: rotateY(180deg),
+}
+.preserve-3d {
+  transform-style: preserve-3d,
+}
+.perspective {
+  perspective: 1000px,
+}
+.backface-hidden{
+  backface-visibility: hidden,
+} */
+.flip-card {
+  width: 300px;
+  height: 230px;
+  perspective: 1000px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+}
+
+/* .flip-card-front {
+  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+  color: coral;
+} */
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+
+.square {
+  width: 150px;
+  max-height: 100px;
+  text-align: center;
+
+  transition-property: width;
+  transition-duration: 1s;
+}
+.square.ttf-cubic {
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.square:is(:hover, :focus) {
+  width: 70%;
+}
+
+.animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  -moz-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 6s ease infinite alternate;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  @keyframes rotate {
+    0% {
+             transform: rotate(0deg);
+         }
+         100% {
+             transform: rotate(360deg);
+         }
+     }
+     .out-top {
+         animation: rotate 20s linear infinite;
+         transform-origin: 13px 25px;
+     }
+     .in-top {
+         animation: rotate 10s linear infinite;
+         transform-origin: 13px 25px;
+     }
+     .out-bottom {
+         animation: rotate 25s linear infinite;
+         transform-origin: 84px 93px;
+     }
+     .in-bottom {
+         animation: rotate 15s linear infinite;
+         transform-origin: 84px 93px;
+     }
+
+     
+     .svg-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+  }
+  
+  
+  .links {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 18px;
+      font-family: sans-serif;
+  }
+
+  .full {
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      scroll-behavior: unset;
+  } 
+
+  
+  /* -------------------------------------- */
+
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px);
+    }
+    100% {
+      transform: translateX(0px) ;
+    }
+  }
+  
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0px) ;
+    }
+    100% {
+      transform: translateX(-1200px);
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 0.3s forwards;
+  }
+  
+  .slide-out {
+    animation: slideOut 0.3s forwards;
+  }
+
+  .slide-up {
+    animation: slideUp 0.3s forwards;
+  }
+/*dappled-sunlight:start*/html.bg-primary-bg{background-color:#a4b19f;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .2 0 0 0 0 .22 0 0 0 0 .18 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(120% 90% at 12% 8%,rgba(226,204,168,.7) 0,rgba(226,204,168,0) 62%),radial-gradient(90% 80% at 92% 96%,rgba(221,195,164,.65) 0,rgba(221,195,164,0) 60%),radial-gradient(176.42% 113.35% at 20.76% 45.41%,#9ca99e 1.66%,#828f78 15.7%,#cad5c2 61.96%);background-size:180px 180px,auto,auto,auto}.svg-bg{display:none}html.bg-primary-bg:before,body:before,body:after{content:"";position:fixed;inset:-6vmax;z-index:-1;pointer-events:none;background-repeat:no-repeat;will-change:transform,opacity;animation-timing-function:linear;animation-iteration-count:infinite}html.bg-primary-bg:before{background-image:radial-gradient(11.43vmax 13.22vmax at 77.1% 16.3%,rgba(255,230,178,0.28) 0,rgba(255,230,178,0.23) 40%,rgba(255,230,178,0.08) 68%,rgba(255,230,178,0) 100%),radial-gradient(11.92vmax 13.54vmax at 85.2% 16.9%,rgba(255,230,178,0.32) 0,rgba(255,230,178,0.26) 40%,rgba(255,230,178,0.1) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.26vmax 7.2vmax at 89.5% 15.9%,rgba(255,230,178,0.34) 0,rgba(255,230,178,0.28) 40%,rgba(255,230,178,0.1) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.79vmax 7.41vmax at 95.3% 16.6%,rgba(255,230,178,0.4) 0,rgba(255,230,178,0.33) 40%,rgba(255,230,178,0.12) 68%,rgba(255,230,178,0) 100%),radial-gradient(6.01vmax 7.64vmax at 75.1% 31.2%,rgba(255,230,178,0.45) 0,rgba(255,230,178,0.37) 40%,rgba(255,230,178,0.14) 68%,rgba(255,230,178,0) 100%),radial-gradient(4.9vmax 5.63vmax at 71.9% 37.3%,rgba(255,230,178,0.38) 0,rgba(255,230,178,0.31) 40%,rgba(255,230,178,0.11) 68%,rgba(255,230,178,0) 100%),radial-gradient(4.62vmax 4.9vmax at 69.1% 42.6%,rgba(255,230,178,0.34) 0,rgba(255,230,178,0.28) 40%,rgba(255,230,178,0.1) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.03vmax 5.9vmax at 71.6% 48.6%,rgba(255,230,178,0.38) 0,rgba(255,230,178,0.31) 40%,rgba(255,230,178,0.11) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.02vmax 6.8vmax at 76% 55.6%,rgba(255,230,178,0.44) 0,rgba(255,230,178,0.36) 40%,rgba(255,230,178,0.13) 68%,rgba(255,230,178,0) 100%),radial-gradient(4.24vmax 5.23vmax at 81.8% 55.4%,rgba(255,230,178,0.39) 0,rgba(255,230,178,0.32) 40%,rgba(255,230,178,0.12) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.06vmax 5.78vmax at 22.7% 64.1%,rgba(255,230,178,0.32) 0,rgba(255,230,178,0.27) 40%,rgba(255,230,178,0.1) 68%,rgba(255,230,178,0) 100%),radial-gradient(4.86vmax 5.05vmax at 14.6% 62.9%,rgba(255,230,178,0.34) 0,rgba(255,230,178,0.28) 40%,rgba(255,230,178,0.1) 68%,rgba(255,230,178,0) 100%),radial-gradient(4.86vmax 5.67vmax at 12.1% 57.4%,rgba(255,230,178,0.32) 0,rgba(255,230,178,0.26) 40%,rgba(255,230,178,0.09) 68%,rgba(255,230,178,0) 100%),radial-gradient(4.87vmax 6.11vmax at 6.9% 58.4%,rgba(255,230,178,0.32) 0,rgba(255,230,178,0.26) 40%,rgba(255,230,178,0.09) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.48vmax 7.12vmax at 18.6% 14%,rgba(255,230,178,0.39) 0,rgba(255,230,178,0.32) 40%,rgba(255,230,178,0.12) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.16vmax 6.63vmax at 22.1% 21.5%,rgba(255,230,178,0.33) 0,rgba(255,230,178,0.27) 40%,rgba(255,230,178,0.1) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.67vmax 6.95vmax at 25.9% 27.8%,rgba(255,230,178,0.41) 0,rgba(255,230,178,0.33) 40%,rgba(255,230,178,0.12) 68%,rgba(255,230,178,0) 100%),radial-gradient(13.56vmax 15.47vmax at 26.3% 33.3%,rgba(255,230,178,0.32) 0,rgba(255,230,178,0.26) 40%,rgba(255,230,178,0.09) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.74vmax 6.86vmax at 19.6% 35.2%,rgba(255,230,178,0.39) 0,rgba(255,230,178,0.32) 40%,rgba(255,230,178,0.12) 68%,rgba(255,230,178,0) 100%),radial-gradient(8.59vmax 11.62vmax at 16.4% 42%,rgba(255,230,178,0.28) 0,rgba(255,230,178,0.23) 40%,rgba(255,230,178,0.08) 68%,rgba(255,230,178,0) 100%),radial-gradient(9.17vmax 11.01vmax at 30.5% 48.8%,rgba(255,230,178,0.26) 0,rgba(255,230,178,0.21) 40%,rgba(255,230,178,0.08) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.32vmax 6.72vmax at 32.2% 43.8%,rgba(255,230,178,0.36) 0,rgba(255,230,178,0.3) 40%,rgba(255,230,178,0.11) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.06vmax 6.34vmax at 32.6% 36.5%,rgba(255,230,178,0.42) 0,rgba(255,230,178,0.34) 40%,rgba(255,230,178,0.13) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.25vmax 7.05vmax at 36.6% 32.8%,rgba(255,230,178,0.34) 0,rgba(255,230,178,0.28) 40%,rgba(255,230,178,0.1) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.3vmax 6.23vmax at 54.7% 56.6%,rgba(255,230,178,0.46) 0,rgba(255,230,178,0.37) 40%,rgba(255,230,178,0.14) 68%,rgba(255,230,178,0) 100%),radial-gradient(5.4vmax 6.66vmax at 49.5% 57.7%,rgba(255,230,178,0.41) 0,rgba(255,230,178,0.33) 40%,rgba(255,230,178,0.12) 68%,rgba(255,230,178,0) 100%),radial-gradient(6.24vmax 7.69vmax at 42.7% 61.4%,rgba(255,230,178,0.36) 0,rgba(255,230,178,0.29) 40%,rgba(255,230,178,0.11) 68%,rgba(255,230,178,0) 100%),radial-gradient(4.62vmax 6.28vmax at 39.2% 68.1%,rgba(255,230,178,0.44) 0,rgba(255,230,178,0.36) 40%,rgba(255,230,178,0.13) 68%,rgba(255,230,178,0) 100%),radial-gradient(16.39vmax 19vmax at 93.4% 31.2%,rgba(74,88,70,0.15) 0,rgba(74,88,70,0.07) 50%,rgba(74,88,70,0) 100%),radial-gradient(19.68vmax 17.86vmax at 90.8% 63.6%,rgba(74,88,70,0.15) 0,rgba(74,88,70,0.08) 50%,rgba(74,88,70,0) 100%),radial-gradient(23.1vmax 22.21vmax at 79.3% 27.2%,rgba(74,88,70,0.15) 0,rgba(74,88,70,0.07) 50%,rgba(74,88,70,0) 100%),radial-gradient(19.05vmax 22.25vmax at 12.8% 48.7%,rgba(74,88,70,0.17) 0,rgba(74,88,70,0.09) 50%,rgba(74,88,70,0) 100%),radial-gradient(22.13vmax 16.3vmax at 54.9% 32%,rgba(74,88,70,0.13) 0,rgba(74,88,70,0.06) 50%,rgba(74,88,70,0) 100%),radial-gradient(18.13vmax 16.48vmax at 92.4% 94%,rgba(74,88,70,0.14) 0,rgba(74,88,70,0.07) 50%,rgba(74,88,70,0) 100%),radial-gradient(70vmax 55vmax at 18% 22%,rgba(255,236,200,.5) 0,rgba(255,236,200,.16) 45%,rgba(255,236,200,0) 100%),radial-gradient(55vmax 45vmax at 86% 78%,rgba(255,230,196,.26) 0,rgba(255,230,196,.08) 50%,rgba(255,230,196,0) 100%);animation-name:ds-drift-a,ds-turn-a,ds-breathe-a;animation-duration:41s,59s,23s}body:before,body:after{mix-blend-mode:screen}body:before{background-image:radial-gradient(6.98vmax 8.8vmax at 14.4% 67.8%,rgba(255,230,178,0.54) 0,rgba(255,230,178,0.44) 50%,rgba(255,230,178,0.16) 78%,rgba(255,230,178,0) 100%),radial-gradient(6.62vmax 8.79vmax at 14.8% 70.8%,rgba(255,230,178,0.41) 0,rgba(255,230,178,0.34) 50%,rgba(255,230,178,0.12) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.33vmax 4.28vmax at 19.5% 72.8%,rgba(255,230,178,0.55) 0,rgba(255,230,178,0.45) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.54vmax 4.51vmax at 22.4% 77.2%,rgba(255,230,178,0.66) 0,rgba(255,230,178,0.54) 50%,rgba(255,230,178,0.2) 78%,rgba(255,230,178,0) 100%),radial-gradient(7.39vmax 9.74vmax at 15.1% 53.5%,rgba(255,230,178,0.54) 0,rgba(255,230,178,0.45) 50%,rgba(255,230,178,0.16) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.62vmax 4.84vmax at 18.6% 57.7%,rgba(255,230,178,0.57) 0,rgba(255,230,178,0.47) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.32vmax 3.99vmax at 21.4% 62.1%,rgba(255,230,178,0.58) 0,rgba(255,230,178,0.47) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.33vmax 4.27vmax at 19.8% 65.4%,rgba(255,230,178,0.63) 0,rgba(255,230,178,0.51) 50%,rgba(255,230,178,0.19) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.25vmax 4.03vmax at 20.1% 68.3%,rgba(255,230,178,0.56) 0,rgba(255,230,178,0.46) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.9vmax 4.37vmax at 17.7% 71.7%,rgba(255,230,178,0.73) 0,rgba(255,230,178,0.6) 50%,rgba(255,230,178,0.22) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.08vmax 3.81vmax at 13.8% 73.2%,rgba(255,230,178,0.56) 0,rgba(255,230,178,0.46) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(2.95vmax 4.13vmax at 89.9% 53%,rgba(255,230,178,0.7) 0,rgba(255,230,178,0.57) 50%,rgba(255,230,178,0.21) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.63vmax 4.22vmax at 87.1% 54%,rgba(255,230,178,0.57) 0,rgba(255,230,178,0.46) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.1vmax 3.68vmax at 81.7% 52.8%,rgba(255,230,178,0.56) 0,rgba(255,230,178,0.46) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.44vmax 4.22vmax at 78% 52.6%,rgba(255,230,178,0.56) 0,rgba(255,230,178,0.46) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.54vmax 4.34vmax at 73.7% 52.5%,rgba(255,230,178,0.57) 0,rgba(255,230,178,0.47) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(6.71vmax 8.42vmax at 81.4% 85.5%,rgba(255,230,178,0.4) 0,rgba(255,230,178,0.33) 50%,rgba(255,230,178,0.12) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.27vmax 3.51vmax at 78.9% 83.8%,rgba(255,230,178,0.72) 0,rgba(255,230,178,0.59) 50%,rgba(255,230,178,0.22) 78%,rgba(255,230,178,0) 100%),radial-gradient(9.3vmax 10.48vmax at 76% 79.3%,rgba(255,230,178,0.57) 0,rgba(255,230,178,0.47) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(2.91vmax 3.73vmax at 72% 77%,rgba(255,230,178,0.67) 0,rgba(255,230,178,0.55) 50%,rgba(255,230,178,0.2) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.01vmax 3.26vmax at 67.1% 73.9%,rgba(255,230,178,0.6) 0,rgba(255,230,178,0.49) 50%,rgba(255,230,178,0.18) 78%,rgba(255,230,178,0) 100%),radial-gradient(2.82vmax 3.63vmax at 63.8% 71.8%,rgba(255,230,178,0.62) 0,rgba(255,230,178,0.51) 50%,rgba(255,230,178,0.19) 78%,rgba(255,230,178,0) 100%),radial-gradient(6.93vmax 7.98vmax at 38.6% 15.6%,rgba(255,230,178,0.48) 0,rgba(255,230,178,0.4) 50%,rgba(255,230,178,0.15) 78%,rgba(255,230,178,0) 100%),radial-gradient(2.93vmax 3.12vmax at 33.4% 17.8%,rgba(255,230,178,0.7) 0,rgba(255,230,178,0.58) 50%,rgba(255,230,178,0.21) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.78vmax 4.51vmax at 31.2% 21.7%,rgba(255,230,178,0.54) 0,rgba(255,230,178,0.44) 50%,rgba(255,230,178,0.16) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.24vmax 4.57vmax at 29.7% 25.2%,rgba(255,230,178,0.64) 0,rgba(255,230,178,0.52) 50%,rgba(255,230,178,0.19) 78%,rgba(255,230,178,0) 100%),radial-gradient(2.96vmax 3.8vmax at 27.1% 27.3%,rgba(255,230,178,0.51) 0,rgba(255,230,178,0.42) 50%,rgba(255,230,178,0.15) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.21vmax 3.92vmax at 22.6% 30.2%,rgba(255,230,178,0.59) 0,rgba(255,230,178,0.48) 50%,rgba(255,230,178,0.18) 78%,rgba(255,230,178,0) 100%),radial-gradient(2.83vmax 3.98vmax at 10.7% 74%,rgba(255,230,178,0.56) 0,rgba(255,230,178,0.46) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.68vmax 4.21vmax at 9.4% 79.6%,rgba(255,230,178,0.56) 0,rgba(255,230,178,0.46) 50%,rgba(255,230,178,0.17) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.63vmax 4.47vmax at 10.3% 85%,rgba(255,230,178,0.71) 0,rgba(255,230,178,0.58) 50%,rgba(255,230,178,0.21) 78%,rgba(255,230,178,0) 100%),radial-gradient(2.78vmax 3.09vmax at 9.2% 90.3%,rgba(255,230,178,0.62) 0,rgba(255,230,178,0.51) 50%,rgba(255,230,178,0.19) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.48vmax 3.94vmax at 49.9% 73.7%,rgba(255,230,178,0.5) 0,rgba(255,230,178,0.41) 50%,rgba(255,230,178,0.15) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.49vmax 3.95vmax at 53.2% 78.1%,rgba(255,230,178,0.71) 0,rgba(255,230,178,0.58) 50%,rgba(255,230,178,0.21) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.51vmax 4.11vmax at 52.9% 81.3%,rgba(255,230,178,0.6) 0,rgba(255,230,178,0.49) 50%,rgba(255,230,178,0.18) 78%,rgba(255,230,178,0) 100%),radial-gradient(6.3vmax 8.31vmax at 49.9% 86%,rgba(255,230,178,0.47) 0,rgba(255,230,178,0.39) 50%,rgba(255,230,178,0.14) 78%,rgba(255,230,178,0) 100%),radial-gradient(5.36vmax 6.29vmax at 52.4% 90.3%,rgba(255,230,178,0.51) 0,rgba(255,230,178,0.41) 50%,rgba(255,230,178,0.15) 78%,rgba(255,230,178,0) 100%),radial-gradient(8.16vmax 9.18vmax at 54.7% 94.8%,rgba(255,230,178,0.55) 0,rgba(255,230,178,0.45) 50%,rgba(255,230,178,0.16) 78%,rgba(255,230,178,0) 100%),radial-gradient(2.72vmax 3.47vmax at 36.8% 52.5%,rgba(255,230,178,0.72) 0,rgba(255,230,178,0.59) 50%,rgba(255,230,178,0.22) 78%,rgba(255,230,178,0) 100%),radial-gradient(2.73vmax 3.65vmax at 33.4% 54.2%,rgba(255,230,178,0.71) 0,rgba(255,230,178,0.58) 50%,rgba(255,230,178,0.21) 78%,rgba(255,230,178,0) 100%),radial-gradient(4.04vmax 4.58vmax at 34% 57.1%,rgba(255,230,178,0.63) 0,rgba(255,230,178,0.52) 50%,rgba(255,230,178,0.19) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.91vmax 4.91vmax at 36.3% 61.3%,rgba(255,230,178,0.53) 0,rgba(255,230,178,0.43) 50%,rgba(255,230,178,0.16) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.78vmax 4.09vmax at 25.4% 68.2%,rgba(255,230,178,0.68) 0,rgba(255,230,178,0.56) 50%,rgba(255,230,178,0.2) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.37vmax 4.56vmax at 30.8% 66.8%,rgba(255,230,178,0.62) 0,rgba(255,230,178,0.51) 50%,rgba(255,230,178,0.19) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.92vmax 4.29vmax at 34.3% 66.7%,rgba(255,230,178,0.59) 0,rgba(255,230,178,0.48) 50%,rgba(255,230,178,0.18) 78%,rgba(255,230,178,0) 100%),radial-gradient(3.42vmax 4.07vmax at 38.6% 68.5%,rgba(255,230,178,0.66) 0,rgba(255,230,178,0.54) 50%,rgba(255,230,178,0.2) 78%,rgba(255,230,178,0) 100%);animation-name:ds-sway-b,ds-turn-b,ds-shimmer-b;animation-duration:17s,23s,11s}body:after{background-image:radial-gradient(2.62vmax 3.2vmax at 4.3% 40.4%,rgba(255,230,178,0.52) 0,rgba(255,230,178,0.42) 52%,rgba(255,230,178,0.15) 80%,rgba(255,230,178,0) 100%),radial-gradient(5.46vmax 5.91vmax at 2% 40.6%,rgba(255,230,178,0.38) 0,rgba(255,230,178,0.31) 52%,rgba(255,230,178,0.11) 80%,rgba(255,230,178,0) 100%),radial-gradient(5.06vmax 6.81vmax at 2% 37.2%,rgba(255,230,178,0.31) 0,rgba(255,230,178,0.25) 52%,rgba(255,230,178,0.09) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.06vmax 2.46vmax at 2% 33.9%,rgba(255,230,178,0.54) 0,rgba(255,230,178,0.44) 52%,rgba(255,230,178,0.16) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.47vmax 3.18vmax at 2% 30.7%,rgba(255,230,178,0.4) 0,rgba(255,230,178,0.33) 52%,rgba(255,230,178,0.12) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.1vmax 2.77vmax at 58.4% 83.2%,rgba(255,230,178,0.52) 0,rgba(255,230,178,0.43) 52%,rgba(255,230,178,0.16) 80%,rgba(255,230,178,0) 100%),radial-gradient(4.04vmax 5.68vmax at 54.2% 84.9%,rgba(255,230,178,0.44) 0,rgba(255,230,178,0.36) 52%,rgba(255,230,178,0.13) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.3vmax 2.89vmax at 49.6% 83.6%,rgba(255,230,178,0.58) 0,rgba(255,230,178,0.48) 52%,rgba(255,230,178,0.17) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.32vmax 2.48vmax at 48.4% 80.8%,rgba(255,230,178,0.59) 0,rgba(255,230,178,0.49) 52%,rgba(255,230,178,0.18) 80%,rgba(255,230,178,0) 100%),radial-gradient(7.53vmax 8.61vmax at 84% 31.8%,rgba(255,230,178,0.34) 0,rgba(255,230,178,0.28) 52%,rgba(255,230,178,0.1) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.9vmax 3.55vmax at 80.9% 30.3%,rgba(255,230,178,0.59) 0,rgba(255,230,178,0.48) 52%,rgba(255,230,178,0.18) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.6vmax 3.4vmax at 78.8% 27.4%,rgba(255,230,178,0.45) 0,rgba(255,230,178,0.37) 52%,rgba(255,230,178,0.13) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.29vmax 3.04vmax at 86.4% 42.4%,rgba(255,230,178,0.47) 0,rgba(255,230,178,0.39) 52%,rgba(255,230,178,0.14) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.62vmax 3.41vmax at 84.2% 40.9%,rgba(255,230,178,0.46) 0,rgba(255,230,178,0.38) 52%,rgba(255,230,178,0.14) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.35vmax 2.84vmax at 84.3% 37.7%,rgba(255,230,178,0.42) 0,rgba(255,230,178,0.34) 52%,rgba(255,230,178,0.12) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.42vmax 2.9vmax at 81.2% 35.8%,rgba(255,230,178,0.5) 0,rgba(255,230,178,0.41) 52%,rgba(255,230,178,0.15) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.96vmax 3.74vmax at 78.7% 34.4%,rgba(255,230,178,0.52) 0,rgba(255,230,178,0.43) 52%,rgba(255,230,178,0.16) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.76vmax 3.13vmax at 13.8% 23.1%,rgba(255,230,178,0.59) 0,rgba(255,230,178,0.48) 52%,rgba(255,230,178,0.18) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.95vmax 3.58vmax at 16.5% 22.5%,rgba(255,230,178,0.44) 0,rgba(255,230,178,0.36) 52%,rgba(255,230,178,0.13) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.55vmax 3.18vmax at 18% 18.2%,rgba(255,230,178,0.59) 0,rgba(255,230,178,0.48) 52%,rgba(255,230,178,0.18) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.45vmax 2.81vmax at 19.6% 14.6%,rgba(255,230,178,0.41) 0,rgba(255,230,178,0.34) 52%,rgba(255,230,178,0.12) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.75vmax 3.22vmax at 23.3% 15.4%,rgba(255,230,178,0.56) 0,rgba(255,230,178,0.46) 52%,rgba(255,230,178,0.17) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.46vmax 3.04vmax at 26.8% 15.7%,rgba(255,230,178,0.47) 0,rgba(255,230,178,0.39) 52%,rgba(255,230,178,0.14) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.88vmax 3.69vmax at 14.3% 39%,rgba(255,230,178,0.39) 0,rgba(255,230,178,0.32) 52%,rgba(255,230,178,0.12) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.41vmax 2.59vmax at 11.5% 40.9%,rgba(255,230,178,0.41) 0,rgba(255,230,178,0.33) 52%,rgba(255,230,178,0.12) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.93vmax 3.38vmax at 7.8% 43.8%,rgba(255,230,178,0.47) 0,rgba(255,230,178,0.38) 52%,rgba(255,230,178,0.14) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.71vmax 3.26vmax at 69.7% 89.3%,rgba(255,230,178,0.38) 0,rgba(255,230,178,0.31) 52%,rgba(255,230,178,0.11) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.76vmax 3.09vmax at 65.6% 90.3%,rgba(255,230,178,0.56) 0,rgba(255,230,178,0.46) 52%,rgba(255,230,178,0.17) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.66vmax 3.03vmax at 63.3% 89%,rgba(255,230,178,0.52) 0,rgba(255,230,178,0.43) 52%,rgba(255,230,178,0.16) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.62vmax 3.14vmax at 61% 86.6%,rgba(255,230,178,0.42) 0,rgba(255,230,178,0.34) 52%,rgba(255,230,178,0.13) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.91vmax 3.21vmax at 45.2% 62.7%,rgba(255,230,178,0.52) 0,rgba(255,230,178,0.43) 52%,rgba(255,230,178,0.16) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.48vmax 3.33vmax at 43.9% 59.7%,rgba(255,230,178,0.4) 0,rgba(255,230,178,0.32) 52%,rgba(255,230,178,0.12) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.67vmax 3.15vmax at 43.1% 55.3%,rgba(255,230,178,0.58) 0,rgba(255,230,178,0.47) 52%,rgba(255,230,178,0.17) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.37vmax 2.74vmax at 42.3% 51%,rgba(255,230,178,0.42) 0,rgba(255,230,178,0.35) 52%,rgba(255,230,178,0.13) 80%,rgba(255,230,178,0) 100%),radial-gradient(2.36vmax 2.66vmax at 40.4% 47.6%,rgba(255,230,178,0.46) 0,rgba(255,230,178,0.38) 52%,rgba(255,230,178,0.14) 80%,rgba(255,230,178,0) 100%);animation-name:ds-sway-c,ds-turn-c,ds-shimmer-c;animation-duration:13s,19s,7s}@keyframes ds-drift-a{0%{translate:0.674vmax 1.595vmax}2.083%{translate:0.961vmax 1.665vmax}4.167%{translate:1.195vmax 1.663vmax}6.25%{translate:1.375vmax 1.576vmax}8.333%{translate:1.499vmax 1.401vmax}10.417%{translate:1.573vmax 1.147vmax}12.5%{translate:1.601vmax 0.83vmax}14.583%{translate:1.593vmax 0.476vmax}16.667%{translate:1.557vmax 0.115vmax}18.75%{translate:1.503vmax -0.225vmax}20.833%{translate:1.441vmax -0.518vmax}22.917%{translate:1.38vmax -0.745vmax}25%{translate:1.326vmax -0.899vmax}27.083%{translate:1.283vmax -0.982vmax}29.167%{translate:1.254vmax -1.005vmax}31.25%{translate:1.238vmax -0.988vmax}33.333%{translate:1.233vmax -0.954vmax}35.417%{translate:1.231vmax -0.928vmax}37.5%{translate:1.227vmax -0.93vmax}39.583%{translate:1.211vmax -0.971vmax}41.667%{translate:1.175vmax -1.057vmax}43.75%{translate:1.11vmax -1.181vmax}45.833%{translate:1.008vmax -1.327vmax}47.917%{translate:0.864vmax -1.474vmax}50%{translate:0.674vmax -1.595vmax}52.083%{translate:0.439vmax -1.665vmax}54.167%{translate:0.16vmax -1.663vmax}56.25%{translate:-0.156vmax -1.576vmax}58.333%{translate:-0.501vmax -1.401vmax}60.417%{translate:-0.862vmax -1.147vmax}62.5%{translate:-1.227vmax -0.83vmax}64.583%{translate:-1.58vmax -0.476vmax}66.667%{translate:-1.907vmax -0.115vmax}68.75%{translate:-2.192vmax 0.225vmax}70.833%{translate:-2.422vmax 0.518vmax}72.917%{translate:-2.586vmax 0.745vmax}75%{translate:-2.674vmax 0.899vmax}77.083%{translate:-2.683vmax 0.982vmax}79.167%{translate:-2.61vmax 1.005vmax}81.25%{translate:-2.457vmax 0.988vmax}83.333%{translate:-2.231vmax 0.954vmax}85.417%{translate:-1.942vmax 0.928vmax}87.5%{translate:-1.601vmax 0.93vmax}89.583%{translate:-1.224vmax 0.971vmax}91.667%{translate:-0.825vmax 1.057vmax}93.75%{translate:-0.421vmax 1.181vmax}95.833%{translate:-0.027vmax 1.327vmax}97.917%{translate:0.342vmax 1.474vmax}100%{translate:0.674vmax 1.595vmax}}@keyframes ds-turn-a{0%{rotate:0.237deg}2.083%{rotate:0.337deg}4.167%{rotate:0.421deg}6.25%{rotate:0.491deg}8.333%{rotate:0.548deg}10.417%{rotate:0.597deg}12.5%{rotate:0.639deg}14.583%{rotate:0.677deg}16.667%{rotate:0.714deg}18.75%{rotate:0.75deg}20.833%{rotate:0.788deg}22.917%{rotate:0.825deg}25%{rotate:0.863deg}27.083%{rotate:0.897deg}29.167%{rotate:0.926deg}31.25%{rotate:0.947deg}33.333%{rotate:0.954deg}35.417%{rotate:0.945deg}37.5%{rotate:0.917deg}39.583%{rotate:0.865deg}41.667%{rotate:0.789deg}43.75%{rotate:0.687deg}45.833%{rotate:0.56deg}47.917%{rotate:0.409deg}50%{rotate:0.237deg}52.083%{rotate:0.05deg}54.167%{rotate:-0.149deg}56.25%{rotate:-0.351deg}58.333%{rotate:-0.552deg}60.417%{rotate:-0.742deg}62.5%{rotate:-0.917deg}64.583%{rotate:-1.068deg}66.667%{rotate:-1.192deg}68.75%{rotate:-1.282deg}70.833%{rotate:-1.338deg}72.917%{rotate:-1.356deg}75%{rotate:-1.337deg}77.083%{rotate:-1.284deg}79.167%{rotate:-1.199deg}81.25%{rotate:-1.086deg}83.333%{rotate:-0.951deg}85.417%{rotate:-0.8deg}87.5%{rotate:-0.639deg}89.583%{rotate:-0.474deg}91.667%{rotate:-0.311deg}93.75%{rotate:-0.155deg}95.833%{rotate:-0.01deg}97.917%{rotate:0.122deg}100%{rotate:0.237deg}}@keyframes ds-breathe-a{0%{opacity:0.913}2.083%{opacity:0.929}4.167%{opacity:0.942}6.25%{opacity:0.949}8.333%{opacity:0.951}10.417%{opacity:0.949}12.5%{opacity:0.945}14.583%{opacity:0.94}16.667%{opacity:0.935}18.75%{opacity:0.933}20.833%{opacity:0.934}22.917%{opacity:0.939}25%{opacity:0.947}27.083%{opacity:0.956}29.167%{opacity:0.966}31.25%{opacity:0.975}33.333%{opacity:0.981}35.417%{opacity:0.982}37.5%{opacity:0.977}39.583%{opacity:0.967}41.667%{opacity:0.951}43.75%{opacity:0.932}45.833%{opacity:0.91}47.917%{opacity:0.888}50%{opacity:0.867}52.083%{opacity:0.851}54.167%{opacity:0.838}56.25%{opacity:0.831}58.333%{opacity:0.829}60.417%{opacity:0.831}62.5%{opacity:0.835}64.583%{opacity:0.84}66.667%{opacity:0.845}68.75%{opacity:0.847}70.833%{opacity:0.846}72.917%{opacity:0.841}75%{opacity:0.833}77.083%{opacity:0.824}79.167%{opacity:0.814}81.25%{opacity:0.805}83.333%{opacity:0.799}85.417%{opacity:0.798}87.5%{opacity:0.803}89.583%{opacity:0.813}91.667%{opacity:0.829}93.75%{opacity:0.848}95.833%{opacity:0.87}97.917%{opacity:0.892}100%{opacity:0.913}}@keyframes ds-sway-b{0%{translate:0.74vmax 1.359vmax}2.083%{translate:0.961vmax 1.381vmax}4.167%{translate:1.063vmax 1.326vmax}6.25%{translate:1.198vmax 1.191vmax}8.333%{translate:1.41vmax 0.998vmax}10.417%{translate:1.597vmax 0.786vmax}12.5%{translate:1.609vmax 0.602vmax}14.583%{translate:1.379vmax 0.48vmax}16.667%{translate:1.009vmax 0.428vmax}18.75%{translate:0.713vmax 0.433vmax}20.833%{translate:0.68vmax 0.459vmax}22.917%{translate:0.936vmax 0.469vmax}25%{translate:1.339vmax 0.434vmax}27.083%{translate:1.682vmax 0.351vmax}29.167%{translate:1.839vmax 0.235vmax}31.25%{translate:1.845vmax 0.118vmax}33.333%{translate:1.834vmax 0.029vmax}35.417%{translate:1.91vmax -0.017vmax}37.5%{translate:2.038vmax -0.027vmax}39.583%{translate:2.054vmax -0.032vmax}41.667%{translate:1.788vmax -0.068vmax}43.75%{translate:1.202vmax -0.171vmax}45.833%{translate:0.438vmax -0.35vmax}47.917%{translate:-0.269vmax -0.594vmax}50%{translate:-0.74vmax -0.865vmax}52.083%{translate:-0.961vmax -1.116vmax}54.167%{translate:-1.063vmax -1.309vmax}56.25%{translate:-1.198vmax -1.423vmax}58.333%{translate:-1.41vmax -1.463vmax}60.417%{translate:-1.597vmax -1.453vmax}62.5%{translate:-1.609vmax -1.425vmax}64.583%{translate:-1.379vmax -1.402vmax}66.667%{translate:-1.009vmax -1.388vmax}68.75%{translate:-0.713vmax -1.365vmax}70.833%{translate:-0.68vmax -1.299vmax}72.917%{translate:-0.936vmax -1.16vmax}75%{translate:-1.339vmax -0.929vmax}77.083%{translate:-1.682vmax -0.616vmax}79.167%{translate:-1.839vmax -0.252vmax}81.25%{translate:-1.845vmax 0.114vmax}83.333%{translate:-1.834vmax 0.436vmax}85.417%{translate:-1.91vmax 0.683vmax}87.5%{translate:-2.038vmax 0.85vmax}89.583%{translate:-2.054vmax 0.954vmax}91.667%{translate:-1.788vmax 1.028vmax}93.75%{translate:-1.202vmax 1.102vmax}95.833%{translate:-0.438vmax 1.19vmax}97.917%{translate:0.269vmax 1.285vmax}100%{translate:0.74vmax 1.359vmax}}@keyframes ds-turn-b{0%{rotate:1.088deg}2.083%{rotate:1.19deg}4.167%{rotate:1.223deg}6.25%{rotate:1.2deg}8.333%{rotate:1.141deg}10.417%{rotate:1.071deg}12.5%{rotate:1.011deg}14.583%{rotate:0.978deg}16.667%{rotate:0.983deg}18.75%{rotate:1.028deg}20.833%{rotate:1.104deg}22.917%{rotate:1.196deg}25%{rotate:1.283deg}27.083%{rotate:1.34deg}29.167%{rotate:1.346deg}31.25%{rotate:1.284deg}33.333%{rotate:1.145deg}35.417%{rotate:0.93deg}37.5%{rotate:0.65deg}39.583%{rotate:0.325deg}41.667%{rotate:-0.021deg}43.75%{rotate:-0.359deg}45.833%{rotate:-0.663deg}47.917%{rotate:-0.911deg}50%{rotate:-1.088deg}52.083%{rotate:-1.19deg}54.167%{rotate:-1.223deg}56.25%{rotate:-1.2deg}58.333%{rotate:-1.141deg}60.417%{rotate:-1.071deg}62.5%{rotate:-1.011deg}64.583%{rotate:-0.978deg}66.667%{rotate:-0.983deg}68.75%{rotate:-1.028deg}70.833%{rotate:-1.104deg}72.917%{rotate:-1.196deg}75%{rotate:-1.283deg}77.083%{rotate:-1.34deg}79.167%{rotate:-1.346deg}81.25%{rotate:-1.284deg}83.333%{rotate:-1.145deg}85.417%{rotate:-0.93deg}87.5%{rotate:-0.65deg}89.583%{rotate:-0.325deg}91.667%{rotate:0.021deg}93.75%{rotate:0.359deg}95.833%{rotate:0.663deg}97.917%{rotate:0.911deg}100%{rotate:1.088deg}}@keyframes ds-shimmer-b{0%{opacity:0.856}2.083%{opacity:0.856}4.167%{opacity:0.85}6.25%{opacity:0.847}8.333%{opacity:0.854}10.417%{opacity:0.871}12.5%{opacity:0.893}14.583%{opacity:0.911}16.667%{opacity:0.917}18.75%{opacity:0.905}20.833%{opacity:0.879}22.917%{opacity:0.846}25%{opacity:0.817}27.083%{opacity:0.8}29.167%{opacity:0.802}31.25%{opacity:0.818}33.333%{opacity:0.842}35.417%{opacity:0.863}37.5%{opacity:0.873}39.583%{opacity:0.867}41.667%{opacity:0.849}43.75%{opacity:0.826}45.833%{opacity:0.808}47.917%{opacity:0.801}50%{opacity:0.805}52.083%{opacity:0.817}54.167%{opacity:0.825}56.25%{opacity:0.822}58.333%{opacity:0.801}60.417%{opacity:0.762}62.5%{opacity:0.713}64.583%{opacity:0.665}66.667%{opacity:0.627}68.75%{opacity:0.606}70.833%{opacity:0.603}72.917%{opacity:0.611}75%{opacity:0.622}77.083%{opacity:0.627}79.167%{opacity:0.623}81.25%{opacity:0.613}83.333%{opacity:0.603}85.417%{opacity:0.603}87.5%{opacity:0.621}89.583%{opacity:0.657}91.667%{opacity:0.708}93.75%{opacity:0.762}95.833%{opacity:0.81}97.917%{opacity:0.842}100%{opacity:0.856}}@keyframes ds-sway-c{0%{translate:1.74vmax 0.828vmax}2.083%{translate:1.734vmax 0.722vmax}4.167%{translate:1.556vmax 0.467vmax}6.25%{translate:1.313vmax 0.273vmax}8.333%{translate:1.121vmax 0.317vmax}10.417%{translate:1.034vmax 0.582vmax}12.5%{translate:1.013vmax 0.886vmax}14.583%{translate:0.945vmax 1.064vmax}16.667%{translate:0.718vmax 1.12vmax}18.75%{translate:0.285vmax 1.206vmax}20.833%{translate:-0.3vmax 1.438vmax}22.917%{translate:-0.904vmax 1.754vmax}25%{translate:-1.388vmax 1.947vmax}27.083%{translate:-1.676vmax 1.851vmax}29.167%{translate:-1.794vmax 1.496vmax}31.25%{translate:-1.843vmax 1.077vmax}33.333%{translate:-1.933vmax 0.772vmax}35.417%{translate:-2.115vmax 0.583vmax}37.5%{translate:-2.344vmax 0.368vmax}39.583%{translate:-2.504vmax 0.008vmax}41.667%{translate:-2.478vmax -0.437vmax}43.75%{translate:-2.215vmax -0.77vmax}45.833%{translate:-1.768vmax -0.832vmax}47.917%{translate:-1.266vmax -0.663vmax}50%{translate:-0.847vmax -0.464vmax}52.083%{translate:-0.586vmax -0.418vmax}54.167%{translate:-0.456vmax -0.526vmax}56.25%{translate:-0.357vmax -0.636vmax}58.333%{translate:-0.178vmax -0.621vmax}60.417%{translate:0.128vmax -0.523vmax}62.5%{translate:0.515vmax -0.522vmax}64.583%{translate:0.864vmax -0.759vmax}66.667%{translate:1.055vmax -1.18vmax}68.75%{translate:1.034vmax -1.57vmax}70.833%{translate:0.849vmax -1.742vmax}72.917%{translate:0.625vmax -1.695vmax}75%{translate:0.495vmax -1.584vmax}77.083%{translate:0.528vmax -1.547vmax}79.167%{translate:0.694vmax -1.556vmax}81.25%{translate:0.887vmax -1.441vmax}83.333%{translate:0.991vmax -1.076vmax}85.417%{translate:0.954vmax -0.524vmax}87.5%{translate:0.817vmax -0.004vmax}89.583%{translate:0.695vmax 0.296vmax}91.667%{translate:0.704vmax 0.378vmax}93.75%{translate:0.896vmax 0.406vmax}95.833%{translate:1.218vmax 0.528vmax}97.917%{translate:1.545vmax 0.722vmax}100%{translate:1.74vmax 0.828vmax}}@keyframes ds-turn-c{0%{rotate:-1.893deg}2.083%{rotate:-2.024deg}4.167%{rotate:-2.098deg}6.25%{rotate:-2.111deg}8.333%{rotate:-2.06deg}10.417%{rotate:-1.945deg}12.5%{rotate:-1.769deg}14.583%{rotate:-1.54deg}16.667%{rotate:-1.266deg}18.75%{rotate:-0.958deg}20.833%{rotate:-0.628deg}22.917%{rotate:-0.29deg}25%{rotate:0.044deg}27.083%{rotate:0.361deg}29.167%{rotate:0.65deg}31.25%{rotate:0.903deg}33.333%{rotate:1.111deg}35.417%{rotate:1.272deg}37.5%{rotate:1.385deg}39.583%{rotate:1.45deg}41.667%{rotate:1.472deg}43.75%{rotate:1.456deg}45.833%{rotate:1.41deg}47.917%{rotate:1.342deg}50%{rotate:1.261deg}52.083%{rotate:1.174deg}54.167%{rotate:1.088deg}56.25%{rotate:1.01deg}58.333%{rotate:0.943deg}60.417%{rotate:0.888deg}62.5%{rotate:0.845deg}64.583%{rotate:0.811deg}66.667%{rotate:0.782deg}68.75%{rotate:0.751deg}70.833%{rotate:0.714deg}72.917%{rotate:0.661deg}75%{rotate:0.588deg}77.083%{rotate:0.489deg}79.167%{rotate:0.36deg}81.25%{rotate:0.198deg}83.333%{rotate:0.006deg}85.417%{rotate:-0.216deg}87.5%{rotate:-0.46deg}89.583%{rotate:-0.721deg}91.667%{rotate:-0.987deg}93.75%{rotate:-1.249deg}95.833%{rotate:-1.495deg}97.917%{rotate:-1.714deg}100%{rotate:-1.893deg}}@keyframes ds-shimmer-c{0%{opacity:0.768}2.083%{opacity:0.737}4.167%{opacity:0.688}6.25%{opacity:0.625}8.333%{opacity:0.554}10.417%{opacity:0.484}12.5%{opacity:0.427}14.583%{opacity:0.39}16.667%{opacity:0.378}18.75%{opacity:0.389}20.833%{opacity:0.419}22.917%{opacity:0.46}25%{opacity:0.502}27.083%{opacity:0.537}29.167%{opacity:0.561}31.25%{opacity:0.572}33.333%{opacity:0.574}35.417%{opacity:0.574}37.5%{opacity:0.578}39.583%{opacity:0.592}41.667%{opacity:0.618}43.75%{opacity:0.655}45.833%{opacity:0.697}47.917%{opacity:0.738}50%{opacity:0.768}52.083%{opacity:0.783}54.167%{opacity:0.779}56.25%{opacity:0.759}58.333%{opacity:0.729}60.417%{opacity:0.698}62.5%{opacity:0.676}64.583%{opacity:0.669}66.667%{opacity:0.682}68.75%{opacity:0.714}70.833%{opacity:0.759}72.917%{opacity:0.809}75%{opacity:0.854}77.083%{opacity:0.886}79.167%{opacity:0.9}81.25%{opacity:0.897}83.333%{opacity:0.879}85.417%{opacity:0.853}87.5%{opacity:0.826}89.583%{opacity:0.806}91.667%{opacity:0.793}93.75%{opacity:0.789}95.833%{opacity:0.788}97.917%{opacity:0.784}100%{opacity:0.768}}@media (prefers-reduced-motion:reduce){html.bg-primary-bg:before,body:before,body:after{animation:none}}/*dappled-sunlight:end*/
