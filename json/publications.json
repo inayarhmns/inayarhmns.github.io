@@ -4,12 +4,27 @@
         "name": "Unveiling the Influence of Amplifying Language-Specific Neurons",
         "link": "https://arxiv.org/pdf/2507.22581",
         "description": "This research titled 'Unveiling the Influence of Amplifying Language-Specific Neurons' has been accepted to AACL 2025. It studies the amplification of language-specific neurons in large language models (LLMs). It involves identifying and intervening language-specific neurons in several autoregressive models, with the purpose of model interpretability.",
-        "type": "P", 
+        "type": "P",
         "role" : ["First author"],
         "tech":["python","pytorch"],
         "developer" : "team",
-        "picture" : "/img/map1col.svg"
+        "picture" : "/img/map1col.svg",
+        "authors": ["Inaya Rahmanisa", "Lyzander Marciano Andrylie", "Mahardika Krisna Ihsani", "Alfan Farizki Wicaksono", "Haryo Akbarianto Wibowo", "Alham Fikri Aji"],
+        "venue": "AACL 2025",
+        "year": "2025"
+      },
+      {
+        "name": "Sparse Autoencoders Can Capture Language-Specific Concepts Across Diverse Languages",
+        "link": "https://arxiv.org/abs/2507.11230",
+        "description": "This research titled 'Sparse Autoencoders Can Capture Language-Specific Concepts Across Diverse Languages' studies how sparse autoencoders (SAEs) can find monosemantic, language-specific features inside large language models (LLMs). It introduces SAE-LAPE, a method based on feature activation probability, to identify language-specific features within the feed-forward network. These features mostly appear in the middle-to-final layers, are interpretable, influence the model's multilingual performance and output language, and can be used for language identification with performance comparable to fastText, with the purpose of model interpretability.",
+        "type": "P",
+        "role" : ["Second author"],
+        "tech":["python","pytorch"],
+        "developer" : "team",
+        "picture" : "/img/sae.png",
+        "authors": ["Lyzander Marciano Andrylie", "Inaya Rahmanisa", "Mahardika Krisna Ihsani", "Alfan Farizki Wicaksono", "Haryo Akbarianto Wibowo", "Alham Fikri Aji"],
+        "venue": "arXiv preprint",
+        "year": "2025"
       }
     ]
   }
-  
